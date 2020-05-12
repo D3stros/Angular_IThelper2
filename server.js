@@ -13,11 +13,9 @@ app.use(bodyParser.json());
 
 app.use("/api", api);
 
-app.use(
-  express.static(path.join(__dirname, "/AngularAuth/dist/ITHelper/index.html"))
-);
+app.use(express.static(path.join(__dirname, "/AngularAuth/dist/index.html")));
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname + "/AngularAuth/dist/ITHelper/index.html"));
+  res.sendFile(path.join(__dirname + "/AngularAuth/dist/index.html"));
 });
 
 app.listen(PORT, function () {
