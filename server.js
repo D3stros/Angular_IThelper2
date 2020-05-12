@@ -11,9 +11,9 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use("/api", api);
+app.use(express.static(__dirname + "/api"));
 app.get("/", function (req, res) {
-  res.send("Hello from server");
+  res.sendFile(path.join(__dirname + "AngularAuth/dist/index.html"));
 });
 
 app.listen(PORT, function () {
