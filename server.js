@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.use("/api", api);
 app.get("/", function (req, res) {
-  res.sendFile("index.html");
+  res.sendFile(path.join(__dirname + "AngularAuth/dist/index.html"));
 });
 
 app.listen(PORT, function () {
