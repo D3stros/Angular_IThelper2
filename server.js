@@ -12,8 +12,6 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/api", api);
-var distDir = __dirname + "/AngularAuth/dist/";
-app.use(express.static(distDir));
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/AngularAuth/dist/index.html"));
 });
