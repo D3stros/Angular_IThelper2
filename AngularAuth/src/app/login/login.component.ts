@@ -5,12 +5,12 @@ import { Router } from "@angular/router";
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.css"]
+  styleUrls: ["./login.component.css"],
 })
 export class LoginComponent implements OnInit {
   loginUserData = {
     email: null,
-    password: null
+    password: null,
   };
 
   constructor(private _auth: AuthService, private _router: Router) {}
@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
 
   loginUser() {
     this._auth.loginUser(this.loginUserData).subscribe(
-      res => {
+      (res) => {
         localStorage.setItem("token", res.token);
-        this._router.navigate(["/services"]);
+        this._router.navigate(["/"]);
       },
-      err => console.log(err)
+      (err) => console.log(err)
     );
   }
 }

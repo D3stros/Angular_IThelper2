@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { AuthService } from "../auth.service";
+
 import {
   faAngular,
   faVuejs,
@@ -15,7 +17,7 @@ export class HomeComponent implements OnInit {
   faVuejs = faVuejs;
   faReact = faReact;
 
-  constructor() {}
+  constructor(public _authService: AuthService) {}
 
   ngOnInit(): void {}
 }

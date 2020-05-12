@@ -8,20 +8,20 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { RegisterComponent } from "./register/register.component";
 import { LoginComponent } from "./login/login.component";
-import { ServicesComponent } from "./services/services.component";
 import { AuthService } from "./auth.service";
 import { ServicesService } from "./services.service";
 import { AuthGuard } from "./auth.guard";
 import { HomeComponent } from "./home/home.component";
 import { TokenInterceptorService } from "./token-interceptor.service";
+import { PurchaseSuccesfulComponent } from "./purchase-succesful/purchase-succesful.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    ServicesComponent,
     HomeComponent,
+    PurchaseSuccesfulComponent,
   ],
   imports: [
     BrowserModule,

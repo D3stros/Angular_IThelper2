@@ -20,9 +20,24 @@
         <h1 class="card-title pricing-card-title">
           €0 <small class="text-muted">/ Stunde</small>
         </h1>
-        <button type="button" class="btn btn-lg btn-block btn-primary">
+        <a
+          *ngIf="!_authService.loggedIn(); then register; else purchase_success"
+          class="btn btn-lg btn-block btn-primary"
+        >
           Kaufen
-        </button>
+        </a>
+        <ng-template #register
+          ><a routerLink="/register" class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
+        <ng-template #purchase_success
+          ><a
+            routerLink="/purchase-success"
+            class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
       </div>
     </div>
     <div class="card mb-4 box-shadow">
@@ -38,9 +53,24 @@
         <h1 class="card-title pricing-card-title">
           €0 <small class="text-muted">/ Stunde</small>
         </h1>
-        <button type="button" class="btn btn-lg btn-block btn-primary">
+        <a
+          *ngIf="!_authService.loggedIn(); then register; else purchase_success"
+          class="btn btn-lg btn-block btn-primary"
+        >
           Kaufen
-        </button>
+        </a>
+        <ng-template #register
+          ><a routerLink="/register" class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
+        <ng-template #purchase_success
+          ><a
+            routerLink="/purchase-success"
+            class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
       </div>
     </div>
     <div class="card mb-4 box-shadow">
@@ -56,9 +86,24 @@
         <h1 class="card-title pricing-card-title">
           €0 <small class="text-muted">/ Stunde</small>
         </h1>
-        <button type="button" class="btn btn-lg btn-block btn-primary">
+        <a
+          *ngIf="!_authService.loggedIn(); then register; else purchase_success"
+          class="btn btn-lg btn-block btn-primary"
+        >
           Kaufen
-        </button>
+        </a>
+        <ng-template #register
+          ><a routerLink="/register" class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
+        <ng-template #purchase_success
+          ><a
+            routerLink="/purchase-success"
+            class="btn btn-lg btn-block btn-primary"
+            >Kaufen</a
+          ></ng-template
+        >
       </div>
     </div>
   </div>
