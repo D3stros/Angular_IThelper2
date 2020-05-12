@@ -5,7 +5,7 @@ const User = require("../models/user");
 
 const mongoose = require("mongoose");
 const db =
-  "mongodb+srv://ITHelper:test@destros-cluster-af4m0.mongodb.net/ITHelper?retryWrites=true&w=majority";
+  "mongodb+srv://ITHelper:JnGYwyCVVG3HCb4@destros-cluster-af4m0.mongodb.net/ITHelper?retryWrites=true&w=majority";
 
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useUnifiedTopology", true);
