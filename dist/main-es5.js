@@ -644,8 +644,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         this.http = http;
         this._router = _router;
-        this._registerUrl = "http://localhost:3000/api/register";
-        this._loginUrl = "http://localhost:3000/api/login";
+        this._registerUrl = "/api/register";
+        this._loginUrl = "/api/login";
       }
 
       _createClass(AuthService, [{
@@ -1407,7 +1407,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, ServicesService);
 
         this.http = http;
-        this._serviceUrl = "http://localhost:3000/api/services";
+        this._serviceUrl = "/api/services";
       }
 
       _createClass(ServicesService, [{

@@ -348,8 +348,8 @@ class AuthService {
     constructor(http, _router) {
         this.http = http;
         this._router = _router;
-        this._registerUrl = "http://localhost:3000/api/register";
-        this._loginUrl = "http://localhost:3000/api/login";
+        this._registerUrl = "/api/register";
+        this._loginUrl = "/api/login";
     }
     registerUser(user) {
         return this.http.post(this._registerUrl, user);
@@ -373,7 +373,7 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: "root"
+                providedIn: "root",
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }]; }, null); })();
 
@@ -699,7 +699,7 @@ __webpack_require__.r(__webpack_exports__);
 class ServicesService {
     constructor(http) {
         this.http = http;
-        this._serviceUrl = "http://localhost:3000/api/services";
+        this._serviceUrl = "/api/services";
     }
     getServices() {
         return this.http.get(this._serviceUrl);
@@ -710,7 +710,7 @@ ServicesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ServicesService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: "root"
+                providedIn: "root",
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
 
