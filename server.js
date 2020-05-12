@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + "/api"));
+app.use("/api", api);
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "AngularAuth/dist/index.html"));
 });
